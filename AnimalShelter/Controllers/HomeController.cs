@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TemplateName.Controllers
+namespace AnimalShelter.Controllers
 {
   public class HomeController : Controller
   {
-    [Route("/")]
+    [HttpGet("/")]
     public ActionResult Index()
-    { return View(); }
+    {
+      return View();
+    }
   }
 }
